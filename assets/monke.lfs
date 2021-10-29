@@ -1,0 +1,63 @@
+Renderer
+{
+	resolution 1280 720
+	maxDepth 5
+	tileWidth 512
+	tileHeight 512
+	hdrMultiplier 2.0
+	enableRR True
+	enableConstantBG True
+	RRDepth 2
+}
+Camera
+{
+	# Position of the camera in world coordinates.
+	position 0 10 10
+	# Orientation of the camera.
+	lookAt 0 1 0
+	# Field of vision of the camera.
+	fov 30
+}
+
+material white
+{
+	color 1.0 1.0 1.0
+	roughness 0.6
+}
+
+material glass
+{
+	color 1.00 1.00 1.00
+	roughness 0.00
+	transmission 1.0
+	ior 1.5
+	extinction 1.00 1.00 1.00
+}
+
+# Geometry data
+mesh
+{
+	file monke/monke.obj
+	material glass
+	position 0 1 0
+}
+mesh
+{
+	file monke/box.obj
+	material white
+	position 0 1 0
+}
+light
+{
+	emission 1.12 2.22 2.55
+	position -4 4 0
+	type Sphere
+	radius 1
+}
+light
+{
+	emission 2.55 1.88 0.99
+	position 4 4 0
+	type Sphere
+	radius 1
+}

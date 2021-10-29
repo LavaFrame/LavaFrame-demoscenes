@@ -1,0 +1,46 @@
+Renderer
+{
+	resolution 1280 720
+	maxDepth 3
+	tileWidth 1280
+	tileHeight 720
+	envMap HDR/kloppenheim.hdr
+	hdrMultiplier 2.0
+}
+Camera
+{
+	position 20 12 0
+	lookAt -0.953633 2.17253 -0.0972613
+	fov 50
+}
+
+material checker
+{
+	albedoTexture teapot/checker.png
+	roughness 0.25
+}
+
+material white
+{
+	albedo 1.0 1.0 1.0
+	roughness 0.02
+	clearcoat 1.0
+}
+
+mesh
+{
+	file teapot/teapot.obj
+	material white
+}
+
+mesh
+{
+	file teapot/teapot_top.obj
+	material white
+}
+
+mesh
+{
+	file teapot/plane.obj
+	material checker
+}
