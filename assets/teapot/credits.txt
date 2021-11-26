@@ -1,2 +1,2 @@
 HDRI from HDRIhaven / Polyhaven (https://polyhaven.com/a/kloppenheim_02)
-Checker texture from DevTextureLi (https://github.com/Nolram12345/DevTextureLib)
+Checker texture from DevTextureLib (https://github.com/Nolram12345/DevTextureLib)
