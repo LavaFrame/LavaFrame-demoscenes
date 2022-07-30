@@ -1,0 +1,60 @@
+Renderer
+{
+	resolution 1024 1024 
+	maxDepth 15
+	hdrMultiplier 0.0
+}
+
+Camera
+{
+	position 0.0 0.5 -2.0
+	lookAt 0 0.5 0.0
+	fov 35
+}
+
+material glass
+{
+	albedo 1.0 1.0 1.0
+	transmission 1.0
+	roughness 0.015
+	ior 1.45
+}
+
+material glow
+{
+	emission 2.0 0.8 0.1
+}
+
+material glow2
+{
+	emission 0.1 0.8 2.0
+}
+
+material glow3
+{
+	emission 1.0 1.0 1.0
+}
+
+mesh wineglass
+{
+	file wineglass/glass.obj
+	material glass
+	scale 5.0 5.0 5.0
+}
+
+mesh  cube
+{
+	file wineglass/cube.obj
+	material glow
+	position 3 1 -1
+	scale 0.1 0.25 0.1
+}
+
+mesh  cube2
+{
+	file wineglass/cube.obj
+	material glow2
+	position -3 -1 1
+	scale 0.1 0.25 0.1
+}
+
